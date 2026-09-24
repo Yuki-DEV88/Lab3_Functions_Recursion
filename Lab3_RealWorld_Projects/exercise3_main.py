@@ -1,14 +1,11 @@
 from telemetry import generate_telemetry_stream, validate_reading, normalize_reading, OPERATING_RANGE
 from diagnostic import monitor, trace_abnormal_condition, build_diagnostic_report, EXECUTION_LOG, ABNORMAL_THRESHOLD
 
-# ----------------------------------------------------------------------
-# 1. CONFIGURATION (Cell 1 style) - Requirement 1
-# ----------------------------------------------------------------------
 LAST_NAME = "Cardenas"
 STUDENT_ID = "TUPM-26-1258"
 FAVORITE_ARTIST = "Maroon 5"
 SEED_DIGIT = int(STUDENT_ID[-1])
-NUM_READINGS = SEED_DIGIT + 6  # fixed stream length
+NUM_READINGS = SEED_DIGIT + 6  
 
 
 @monitor
